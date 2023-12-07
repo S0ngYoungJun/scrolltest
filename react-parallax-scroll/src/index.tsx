@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import FullpageWrapper from './FullpageWrapper';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const fullpageOptions = {
+  anchors: ['video', 'photo', 'box'],
+  sectionsColor: ['#000000', '#ffffff', '#cccccc'],
+};
+
+ReactDOM.render(<FullpageWrapper fullpageOptions={fullpageOptions} />, document.getElementById('root'));
